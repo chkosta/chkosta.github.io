@@ -20,8 +20,8 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 flexDirection: "column",
                 justifyContent: "space-between",
                 padding: "5%",
-                width: "370px",
-                height: "270px",
+                width: "365px",
+                height: "280px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}

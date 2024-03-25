@@ -46,7 +46,7 @@ const LandingPage = (props: ILandingPageProps) => {
           <PrimaryButton
             sx={{
               mr: isNotDesktop ? 1 : 10,
-              width: isNotDesktop ? "100px" : "200px",
+              width: isNotDesktop ? "110px" : "200px",
               fontSize: isNotDesktop ? 16 : 24,
             }}
           >
@@ -58,7 +58,7 @@ const LandingPage = (props: ILandingPageProps) => {
           <PrimaryButton
             sx={{
               mr: isNotDesktop ? 1 : 10,
-              width: isNotDesktop ? "100px" : "200px",
+              width: isNotDesktop ? "110px" : "200px",
               fontSize: isNotDesktop ? 16 : 24,
             }}
           >
@@ -69,7 +69,7 @@ const LandingPage = (props: ILandingPageProps) => {
         <Link to="/projects">
           <PrimaryButton
             sx={{
-              width: isNotDesktop ? "100px" : "200px",
+              width: isNotDesktop ? "110px" : "200px",
               fontSize: isNotDesktop ? 16 : 24,
             }}
           >
