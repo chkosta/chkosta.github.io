@@ -9,7 +9,7 @@ const AboutPage = (props: IAboutPageProps) => {
 
   return (
     <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
-      <Typography variant="h4" fontWeight={"bold"}>
+      <Typography variant="h5" fontWeight={"bold"}>
         Background
       </Typography>
       <Typography component="ul" sx={{ mt: 2 }}>

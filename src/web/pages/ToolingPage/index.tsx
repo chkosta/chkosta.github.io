@@ -9,7 +9,7 @@ const ToolingPage = (props: IToolingPageProps) => {
 
   return (
     <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
-      <Typography variant="h4" fontWeight={"bold"}>
+      <Typography variant="h5" fontWeight={"bold"}>
         Libraries and Frameworks
       </Typography>
       <Typography component="ul" mt={2}>
@@ -48,7 +48,7 @@ const ToolingPage = (props: IToolingPageProps) => {
         </Typography>
       </Typography>
 
-      <Typography variant="h4" fontWeight={"bold"} mt={8}>
+      <Typography variant="h5" fontWeight={"bold"} mt={8}>
         User Interface
       </Typography>
       <Typography component="ul" mt={2}>
@@ -82,7 +82,7 @@ const ToolingPage = (props: IToolingPageProps) => {
       <Typography fontSize={18} mt={8}>
         Website code is open source at{" "}
         <a
-          href="https://github.com/chkosta/my-portfolio"
+          href="https://github.com/chkosta/chkosta.github.io"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "#007bff" }}

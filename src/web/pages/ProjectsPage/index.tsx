@@ -19,31 +19,35 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                padding: "8%",
-                width: "500px",
-                height: "300px",
+                padding: "5%",
+                width: "380px",
+                height: "270px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}
             >
               <Box>
-                <Typography gutterBottom>{el.group}</Typography>
-                <Typography fontSize={24} fontWeight={"bold"} gutterBottom>
+                <Typography fontSize={16} gutterBottom>
+                  {el.group}
+                </Typography>
+                <Typography fontSize={20} fontWeight={"bold"} gutterBottom>
                   {el.title}
                 </Typography>
-                <Typography fontSize={18} gutterBottom>
+                <Typography fontSize={16} gutterBottom>
                   {el.description}
                 </Typography>
               </Box>
 
-              <Box>
+              <Box
+                sx={{ display: "flex", flexWrap: "wrap", marginTop: "10px" }}
+              >
                 {el.buttons.map((el) => (
                   <PrimaryButton
                     key={el.name}
                     onClick={() => {
                       window.open(el.link, "_blank");
                     }}
-                    sx={{ mr: "8px" }}
+                    sx={{ mr: "8px", mb: "8px" }}
                   >
                     {el.name}
                   </PrimaryButton>
