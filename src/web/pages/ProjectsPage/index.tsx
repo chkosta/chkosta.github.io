@@ -1,15 +1,16 @@
 import React from "react";
 import { IProjectsPageProps } from "./types";
-import { Box, Card, Grid, Typography } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { Box, Card, Grid, Typography, useMediaQuery } from "@mui/material";
 import { PrimaryButton } from "../../components/shared/StyledButtons";
 import { projectsConfig } from "./projectsConfig";
 
 const ProjectsPage = (props: IProjectsPageProps) => {
   const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <>
+    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
       <Grid container spacing={10} justifyContent="center">
         {projectsConfig.projects.map((el, index) => (
           <Grid item key={index}>
@@ -27,7 +28,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
             >
               <Box>
                 <Typography gutterBottom>{el.group}</Typography>
-                <Typography fontSize={22} fontWeight={"bold"} gutterBottom>
+                <Typography fontSize={24} fontWeight={"bold"} gutterBottom>
                   {el.title}
                 </Typography>
                 <Typography fontSize={18} gutterBottom>
@@ -52,7 +53,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
           </Grid>
         ))}
       </Grid>
-    </>
+    </Box>
   );
 };
 

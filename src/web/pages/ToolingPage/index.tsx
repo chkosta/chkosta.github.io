@@ -1,11 +1,15 @@
 import React from "react";
 import { IToolingPageProps } from "./types";
-import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 
 const ToolingPage = (props: IToolingPageProps) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Box>
-      <Typography variant="h5" fontWeight={"bold"}>
+    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
+      <Typography variant="h4" fontWeight={"bold"}>
         Libraries and Frameworks
       </Typography>
       <Typography component="ul" mt={2}>
@@ -44,7 +48,7 @@ const ToolingPage = (props: IToolingPageProps) => {
         </Typography>
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={8}>
+      <Typography variant="h4" fontWeight={"bold"} mt={8}>
         User Interface
       </Typography>
       <Typography component="ul" mt={2}>

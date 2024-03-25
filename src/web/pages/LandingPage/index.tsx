@@ -1,8 +1,14 @@
 import React from "react";
 import { ILandingPageProps } from "./types";
-import { Box, Typography, Avatar } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Box, Typography, Avatar, useMediaQuery } from "@mui/material";
+import { Link } from "react-router-dom";
+import { PrimaryButton } from "../../components/shared/StyledButtons";
 
 const LandingPage = (props: ILandingPageProps) => {
+  const theme = useTheme();
+  const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Box
       sx={{
@@ -16,12 +22,38 @@ const LandingPage = (props: ILandingPageProps) => {
       <Avatar
         alt="Profile"
         src="images/profile.jpg"
-        sx={{ width: 350, height: 350, mb: 2 }}
+        sx={{
+          width: isNotDesktop ? 250 : 350,
+          height: isNotDesktop ? 250 : 350,
+          mb: 2,
+        }}
       />
-      <Typography variant="h3" gutterBottom>
+      <Typography variant={isNotDesktop ? "h4" : "h3"} gutterBottom>
         Christos Costa
       </Typography>
-      <Typography variant="h5">Full Stack Developer</Typography>
+      <Typography variant={isNotDesktop ? "h6" : "h5"}>
+        Full Stack Developer
+      </Typography>
+
+      <Box sx={{ display: "flex", flexDirection: "row", mt: 10 }}>
+        <Link to="/about">
+          <PrimaryButton sx={{ mr: 10, width: "200px", fontSize: 24 }}>
+            About
+          </PrimaryButton>
+        </Link>
+
+        <Link to="/experience">
+          <PrimaryButton sx={{ mr: 10, width: "200px", fontSize: 24 }}>
+            Experience
+          </PrimaryButton>
+        </Link>
+
+        <Link to="/projects">
+          <PrimaryButton sx={{ width: "200px", fontSize: 24 }}>
+            Projects
+          </PrimaryButton>
+        </Link>
+      </Box>
     </Box>
   );
 };

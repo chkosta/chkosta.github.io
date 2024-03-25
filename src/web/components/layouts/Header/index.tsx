@@ -37,20 +37,21 @@ const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
   open?: boolean;
-}>(({ theme, open }) => ({
+  isNotDesktop?: boolean;
+}>(({ theme, open, isNotDesktop }) => ({
   flexGrow: 1,
   padding: theme.spacing(3),
   transition: theme.transitions.create("margin", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  ml: `-${drawerWidth}px`,
+  ...(!isNotDesktop && { marginLeft: `-${drawerWidth}px` }),
   ...(open && {
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    ml: 0,
+    ...(!isNotDesktop && { marginLeft: 0 }),
   }),
 }));
 
@@ -67,7 +68,7 @@ const AppBar = styled(MuiAppBar, {
   }),
   ...(open && {
     width: `calc(100% - ${drawerWidth}px)`,
-    ml: `${drawerWidth}px`,
+    marginLeft: `${drawerWidth}px`,
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
@@ -86,7 +87,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 export default function PersistentDrawer() {
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = React.useState(false);
   const [selectedItem, setSelectedItem] = React.useState("Christos Costa");
 
@@ -137,8 +138,8 @@ export default function PersistentDrawer() {
                 alt="Profile"
                 src="images/profile.jpg"
                 sx={{
-                  width: isMobile ? 32 : 40,
-                  height: isMobile ? 32 : 40,
+                  width: 32,
+                  height: 32,
                 }}
               />
             </Link>
@@ -159,7 +160,7 @@ export default function PersistentDrawer() {
             justifyContent: "space-between",
           },
         }}
-        variant={isMobile ? "temporary" : "persistent"}
+        variant={isNotDesktop ? "temporary" : "persistent"}
         anchor="left"
         open={open}
         onClose={handleDrawerClose}
@@ -202,7 +203,15 @@ export default function PersistentDrawer() {
                 <ListItemButton
                   component={Link}
                   to={el.link}
-                  onClick={() => setSelectedItem(el.text)}
+                  onClick={() => {
+                    setSelectedItem(el.text);
+                    if (isNotDesktop) {
+                      handleDrawerClose();
+                    }
+                  }}
+                  sx={{
+                    padding: "3px 6px",
+                  }}
                 >
                   <ListItemIcon sx={{ color: theme.typography.body1 }}>
                     {el.icon}
@@ -217,7 +226,7 @@ export default function PersistentDrawer() {
         <Box>
           <Divider sx={{ backgroundColor: theme.palette.primary.light }} />
 
-          <Typography marginLeft={3} marginTop={2}>
+          <Typography ml={3} mt={2}>
             Social
           </Typography>
 
@@ -251,7 +260,13 @@ export default function PersistentDrawer() {
                   },
                 }}
               >
-                <ListItemButton href={el.link} target="_blank">
+                <ListItemButton
+                  href={el.link}
+                  target="_blank"
+                  sx={{
+                    padding: "3px 6px",
+                  }}
+                >
                   <ListItemIcon sx={{ color: theme.typography.body1 }}>
                     {el.icon}
                   </ListItemIcon>
@@ -263,7 +278,7 @@ export default function PersistentDrawer() {
         </Box>
       </Drawer>
 
-      <Main open={open}>
+      <Main open={open} isNotDesktop={isNotDesktop}>
         <DrawerHeader />
         <Routes>
           <Route path="/" Component={LandingPage} />

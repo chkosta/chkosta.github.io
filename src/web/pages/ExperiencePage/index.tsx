@@ -1,10 +1,14 @@
 import React from "react";
 import { IExperiencePageProps } from "./types";
-import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 
 const ExperiencePage = (props: IExperiencePageProps) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Box>
+    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
       <Typography variant="h5" fontWeight={"bold"}>
         Summary
       </Typography>

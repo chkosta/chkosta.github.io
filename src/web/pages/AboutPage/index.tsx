@@ -1,11 +1,15 @@
 import React from "react";
 import { IAboutPageProps } from "./types";
-import { Box, Typography } from "@mui/material";
+import { useTheme } from "@mui/material/styles";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 
 const AboutPage = (props: IAboutPageProps) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+
   return (
-    <Box>
-      <Typography variant="h5" fontWeight={"bold"}>
+    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
+      <Typography variant="h4" fontWeight={"bold"}>
         Background
       </Typography>
       <Typography component="ul" sx={{ mt: 2 }}>
