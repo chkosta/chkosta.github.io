@@ -35,21 +35,44 @@ const LandingPage = (props: ILandingPageProps) => {
         Full Stack Developer
       </Typography>
 
-      <Box sx={{ display: "flex", flexDirection: "row", mt: 10 }}>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          mt: 10,
+        }}
+      >
         <Link to="/about">
-          <PrimaryButton sx={{ mr: 10, width: "200px", fontSize: 24 }}>
+          <PrimaryButton
+            sx={{
+              mr: isNotDesktop ? 1 : 10,
+              width: isNotDesktop ? "100px" : "200px",
+              fontSize: isNotDesktop ? 16 : 24,
+            }}
+          >
             About
           </PrimaryButton>
         </Link>
 
         <Link to="/experience">
-          <PrimaryButton sx={{ mr: 10, width: "200px", fontSize: 24 }}>
+          <PrimaryButton
+            sx={{
+              mr: isNotDesktop ? 1 : 10,
+              width: isNotDesktop ? "100px" : "200px",
+              fontSize: isNotDesktop ? 16 : 24,
+            }}
+          >
             Experience
           </PrimaryButton>
         </Link>
 
         <Link to="/projects">
-          <PrimaryButton sx={{ width: "200px", fontSize: 24 }}>
+          <PrimaryButton
+            sx={{
+              width: isNotDesktop ? "100px" : "200px",
+              fontSize: isNotDesktop ? 16 : 24,
+            }}
+          >
             Projects
           </PrimaryButton>
         </Link>
