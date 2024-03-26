@@ -37,21 +37,21 @@ const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
   open?: boolean;
-  isNotDesktop?: boolean;
-}>(({ theme, open, isNotDesktop }) => ({
+  isnotdesktop?: string;
+}>(({ theme, open, isnotdesktop }) => ({
   flexGrow: 1,
   padding: theme.spacing(3),
   transition: theme.transitions.create("margin", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
   }),
-  ...(!isNotDesktop && { marginLeft: `-${drawerWidth}px` }),
+  ...(!Boolean(isnotdesktop) && { marginLeft: `-${drawerWidth}px` }),
   ...(open && {
     transition: theme.transitions.create("margin", {
       easing: theme.transitions.easing.easeOut,
       duration: theme.transitions.duration.enteringScreen,
     }),
-    ...(!isNotDesktop && { marginLeft: 0 }),
+    ...(!Boolean(isnotdesktop) && { marginLeft: 0 }),
   }),
 }));
 
@@ -87,7 +87,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 
 export default function PersistentDrawer() {
   const theme = useTheme();
-  const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
+  const isnotdesktop = !useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = React.useState(false);
   const [selectedItem, setSelectedItem] = React.useState("Christos Costa");
 
@@ -160,7 +160,7 @@ export default function PersistentDrawer() {
             justifyContent: "space-between",
           },
         }}
-        variant={isNotDesktop ? "temporary" : "persistent"}
+        variant={isnotdesktop ? "temporary" : "persistent"}
         anchor="left"
         open={open}
         onClose={handleDrawerClose}
@@ -205,7 +205,7 @@ export default function PersistentDrawer() {
                   to={el.link}
                   onClick={() => {
                     setSelectedItem(el.text);
-                    if (isNotDesktop) {
+                    if (isnotdesktop) {
                       handleDrawerClose();
                     }
                   }}
@@ -278,7 +278,7 @@ export default function PersistentDrawer() {
         </Box>
       </Drawer>
 
-      <Main open={open} isNotDesktop={isNotDesktop}>
+      <Main open={open} isnotdesktop={isnotdesktop.toString()}>
         <DrawerHeader />
         <Routes>
           <Route path="/" Component={LandingPage} />

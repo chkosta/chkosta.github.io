@@ -16,15 +16,15 @@ const LandingPage = (props: ILandingPageProps) => {
         flexDirection: "column",
         alignItems: "center",
         textAlign: "center",
-        mt: 20,
+        mt: isNotDesktop ? 10 : 20,
       }}
     >
       <Avatar
         alt="Profile"
         src="images/profile.jpg"
         sx={{
-          width: isNotDesktop ? 250 : 350,
-          height: isNotDesktop ? 250 : 350,
+          width: isNotDesktop ? 270 : 350,
+          height: isNotDesktop ? 270 : 350,
           mb: 2,
         }}
       />
