@@ -6,7 +6,7 @@ import { CssBaseline } from "@mui/material";
 
 export default function AppeProvider() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <ThemeProvider>
         <CssBaseline />
         <Header />

@@ -35,7 +35,9 @@ import ProjectsPage from "../../../pages/ProjectsPage";
 
 const drawerWidth = 240;
 
-const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })<{
+const Main = styled(Box, {
+  shouldForwardProp: (prop) => prop !== "open" && prop !== "isNotDesktop",
+})<{
   open?: boolean;
   isNotDesktop?: boolean;
 }>(({ theme, open, isNotDesktop }) => ({
@@ -172,9 +174,13 @@ export default function PersistentDrawer() {
           <DrawerHeader>
             <IconButton onClick={handleDrawerClose}>
               {theme.direction === "ltr" ? (
-                <ChevronLeftIcon sx={{ color: theme.typography.body1 }} />
+                <ChevronLeftIcon
+                  sx={{ color: theme.palette.primary.contrastText }}
+                />
               ) : (
-                <ChevronRightIcon sx={{ color: theme.typography.body1 }} />
+                <ChevronRightIcon
+                  sx={{ color: theme.palette.primary.contrastText }}
+                />
               )}
             </IconButton>
           </DrawerHeader>
@@ -213,7 +219,9 @@ export default function PersistentDrawer() {
                     padding: "3px 6px",
                   }}
                 >
-                  <ListItemIcon sx={{ color: theme.typography.body1 }}>
+                  <ListItemIcon
+                    sx={{ color: theme.palette.primary.contrastText }}
+                  >
                     {el.icon}
                   </ListItemIcon>
                   <ListItemText primary={el.text} />
@@ -267,7 +275,9 @@ export default function PersistentDrawer() {
                     padding: "3px 6px",
                   }}
                 >
-                  <ListItemIcon sx={{ color: theme.typography.body1 }}>
+                  <ListItemIcon
+                    sx={{ color: theme.palette.primary.contrastText }}
+                  >
                     {el.icon}
                   </ListItemIcon>
                   <ListItemText primary={el.text} />

@@ -38,9 +38,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 </Typography>
               </Box>
 
-              <Box
-                sx={{ display: "flex", flexWrap: "wrap", marginTop: "10px" }}
-              >
+              <Box sx={{ display: "flex", flexWrap: "wrap", mt: "10px" }}>
                 {el.buttons.map((el) => (
                   <PrimaryButton
                     key={el.name}
