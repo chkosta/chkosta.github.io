@@ -75,7 +75,7 @@ const ToolingPage = (props: IToolingPageProps) => {
           for the icons
         </Typography>
         <Typography component="li" fontSize={18}>
-          Segoe UI Symbol font
+          Roboto font
         </Typography>
       </Typography>
 

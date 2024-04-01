@@ -1,82 +1,63 @@
 import React from "react";
-import { ILandingPageProps } from "./types";
-import { useTheme } from "@mui/material/styles";
-import { Box, Typography, Avatar, useMediaQuery } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Container, Typography, Grid, Avatar, Box } from "@mui/material";
 import { PrimaryButton } from "../../components/shared/StyledButtons";
+import { Link } from "react-router-dom";
 
-const LandingPage = (props: ILandingPageProps) => {
-  const theme = useTheme();
-  const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
-
+const LandingPage = () => {
   return (
     <Box
       sx={{
+        minHeight: "80vh",
         display: "flex",
-        flexDirection: "column",
         alignItems: "center",
+        justifyContent: "center",
         textAlign: "center",
-        mt: isNotDesktop ? 10 : 20,
       }}
     >
-      <Avatar
-        alt="Profile"
-        src="images/profile.jpg"
-        sx={{
-          width: isNotDesktop ? 270 : 350,
-          height: isNotDesktop ? 270 : 350,
-          mb: 2,
-        }}
-      />
-      <Typography variant={isNotDesktop ? "h4" : "h3"} gutterBottom>
-        Christos Costa
-      </Typography>
-      <Typography variant={isNotDesktop ? "h6" : "h5"}>
-        Full Stack Developer
-      </Typography>
-
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          mt: 10,
-        }}
-      >
-        <Link to="/about">
-          <PrimaryButton
+      <Container maxWidth="md">
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Avatar
+            alt="Profile"
+            src="images/profile.jpg"
             sx={{
-              mr: isNotDesktop ? 1 : 10,
-              width: isNotDesktop ? "110px" : "200px",
-              fontSize: isNotDesktop ? 16 : 24,
+              width: "40%",
+              height: "auto",
+              margin: "2%",
             }}
-          >
-            About
-          </PrimaryButton>
-        </Link>
+          />
+        </Box>
 
-        <Link to="/experience">
-          <PrimaryButton
-            sx={{
-              mr: isNotDesktop ? 1 : 10,
-              width: isNotDesktop ? "110px" : "200px",
-              fontSize: isNotDesktop ? 16 : 24,
-            }}
-          >
-            Experience
-          </PrimaryButton>
-        </Link>
+        <Typography variant="h3" gutterBottom>
+          Christos Costa
+        </Typography>
+        <Typography variant="h5" gutterBottom>
+          Full Stack Developer
+        </Typography>
 
-        <Link to="/projects">
-          <PrimaryButton
-            sx={{
-              width: isNotDesktop ? "110px" : "200px",
-              fontSize: isNotDesktop ? 16 : 24,
-            }}
-          >
-            Projects
-          </PrimaryButton>
-        </Link>
-      </Box>
+        <Grid container justifyContent="space-between" marginTop="8%">
+          <Grid item>
+            <Link to="/about">
+              <PrimaryButton sx={{ width: "200px" }}>
+                <Typography variant="h6">About</Typography>
+              </PrimaryButton>
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link to="/experience">
+              <PrimaryButton sx={{ width: "200px" }}>
+                <Typography variant="h6">Experience</Typography>
+              </PrimaryButton>
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link to="/projects">
+              <PrimaryButton sx={{ width: "200px" }}>
+                <Typography variant="h6">Projects</Typography>
+              </PrimaryButton>
+            </Link>
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   );
 };

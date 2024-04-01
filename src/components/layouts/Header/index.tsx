@@ -131,9 +131,13 @@ export default function PersistentDrawer() {
               width: "100%",
             }}
           >
-            <Typography noWrap fontSize={20}>
-              {selectedItem}
-            </Typography>
+            {!isNotDesktop || (isNotDesktop && !open) ? (
+              <Typography noWrap fontSize={20}>
+                {selectedItem}
+              </Typography>
+            ) : (
+              <Typography></Typography>
+            )}
 
             <Link to="/" onClick={() => setSelectedItem("Christos Costa")}>
               <Avatar

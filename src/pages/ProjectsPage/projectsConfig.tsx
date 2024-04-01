@@ -2,6 +2,35 @@ export const projectsConfig = {
   projects: [
     {
       id: 0,
+      group: "MOBILE DEVELOPMENT",
+      title: "Quizzify",
+      description:
+        "Trivia quiz android app developed using React Native and Express.js.",
+      buttons: [
+        {
+          name: "GITHUB",
+          link: "https://github.com/chkosta/quizzify",
+        },
+        {
+          name: "PLAYSTORE",
+          link: "", // TO-DO: ADD THE PLAYSTORE LINK FOR QUIZZIFY
+        },
+      ],
+    },
+    {
+      id: 1,
+      group: "WEB DEVELOPMENT",
+      title: "Personal Website",
+      description: "Web app for my personal website.",
+      buttons: [
+        {
+          name: "GITHUB",
+          link: "https://github.com/chkosta/chkosta.github.io",
+        },
+      ],
+    },
+    {
+      id: 2,
       group: "THESIS",
       title: "Sim2Real Methods In Robotics Tasks",
       description:
@@ -22,35 +51,6 @@ export const projectsConfig = {
         {
           name: "VIDEO 3",
           link: "https://www.youtube.com/watch?v=G_Xds8WAR4A",
-        },
-      ],
-    },
-    {
-      id: 1,
-      group: "MOBILE DEVELOPMENT",
-      title: "Quizzify",
-      description:
-        "Trivia quiz android app developed using React Native and Express.js.",
-      buttons: [
-        {
-          name: "GITHUB",
-          link: "https://github.com/chkosta/quizzify",
-        },
-        {
-          name: "PLAYSTORE",
-          link: "", // TO-DO: ADD THE PLAYSTORE LINK FOR QUIZZIFY
-        },
-      ],
-    },
-    {
-      id: 2,
-      group: "WEB DEVELOPMENT",
-      title: "My Portfolio",
-      description: "Web app for my portfolio.",
-      buttons: [
-        {
-          name: "GITHUB",
-          link: "https://github.com/chkosta/chkosta.github.io",
         },
       ],
     },

@@ -11,7 +11,7 @@ interface IThemeProviderProps {
 export default function ThemeProvider({ children }: IThemeProviderProps) {
   const customizedTheme = createTheme({
     typography: {
-      fontFamily: ['"Segoe UI Symbol"'].join(","),
+      fontFamily: ["Roboto", "sans-serif"].join(","),
       body1: {
         color: "#FFFFFF",
       },
