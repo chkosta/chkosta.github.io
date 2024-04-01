@@ -22,36 +22,48 @@ const LandingPage = () => {
             sx={{
               width: "40%",
               height: "auto",
-              margin: "2%",
+              m: "2%",
             }}
           />
         </Box>
 
-        <Typography variant="h3" gutterBottom>
+        <Typography
+          sx={{
+            fontSize: "2.5rem",
+            "@media (max-width:600px)": { fontSize: "2rem" },
+          }}
+        >
           Christos Costa
         </Typography>
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          sx={{
+            fontSize: "1.5rem",
+            "@media (max-width:600px)": { fontSize: "1.2rem" },
+          }}
+        >
           Full Stack Developer
         </Typography>
 
-        <Grid container justifyContent="space-between" marginTop="8%">
-          <Grid item>
+        <Grid container justifyContent="center" spacing={2} mt="8%">
+          <Grid item xs={12} md={4}>
             <Link to="/about">
-              <PrimaryButton sx={{ width: "200px" }}>
+              <PrimaryButton sx={{ width: "80%" }}>
                 <Typography variant="h6">About</Typography>
               </PrimaryButton>
             </Link>
           </Grid>
-          <Grid item>
+
+          <Grid item xs={12} md={4}>
             <Link to="/experience">
-              <PrimaryButton sx={{ width: "200px" }}>
+              <PrimaryButton sx={{ width: "80%" }}>
                 <Typography variant="h6">Experience</Typography>
               </PrimaryButton>
             </Link>
           </Grid>
-          <Grid item>
+
+          <Grid item xs={12} md={4}>
             <Link to="/projects">
-              <PrimaryButton sx={{ width: "200px" }}>
+              <PrimaryButton sx={{ width: "80%" }}>
                 <Typography variant="h6">Projects</Typography>
               </PrimaryButton>
             </Link>
