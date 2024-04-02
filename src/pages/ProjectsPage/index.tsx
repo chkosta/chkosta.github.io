@@ -21,7 +21,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 justifyContent: "space-between",
                 padding: "5%",
                 width: "360px",
-                height: "285px",
+                height: "290px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}

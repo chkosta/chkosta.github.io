@@ -31,6 +31,19 @@ export const projectsConfig = {
     },
     {
       id: 2,
+      group: "ONLINE LEARNING",
+      title: "LeetCode Solutions",
+      description:
+        "Solutions to various LeetCode algorithmic problems using Python.",
+      buttons: [
+        {
+          name: "GITHUB",
+          link: "https://github.com/chkosta/leetcode-solutions",
+        },
+      ],
+    },
+    {
+      id: 3,
       group: "THESIS",
       title: "Sim2Real Methods In Robotics Tasks",
       description:
@@ -51,19 +64,6 @@ export const projectsConfig = {
         {
           name: "VIDEO 3",
           link: "https://www.youtube.com/watch?v=G_Xds8WAR4A",
-        },
-      ],
-    },
-    {
-      id: 3,
-      group: "ONLINE LEARNING",
-      title: "LeetCode Solutions",
-      description:
-        "Solutions to various LeetCode algorithmic problems using Python.",
-      buttons: [
-        {
-          name: "GITHUB",
-          link: "https://github.com/chkosta/leetcode-solutions",
         },
       ],
     },
