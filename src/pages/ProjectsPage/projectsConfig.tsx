@@ -13,7 +13,7 @@ export const projectsConfig = {
         },
         {
           name: "PLAYSTORE",
-          link: "", // TO-DO: ADD THE PLAYSTORE LINK FOR QUIZZIFY
+          link: "https://play.google.com/store/apps/details?id=com.quizzify",
         },
       ],
     },

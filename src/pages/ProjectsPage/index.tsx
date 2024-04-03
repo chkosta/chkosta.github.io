@@ -21,7 +21,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 justifyContent: "space-between",
                 padding: "5%",
                 width: "360px",
-                height: "290px",
+                height: "270px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}
@@ -38,14 +38,19 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 </Typography>
               </Box>
 
-              <Box sx={{ display: "flex", flexWrap: "wrap", mt: "10px" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  mt: "10px",
+                }}
+              >
                 {el.buttons.map((el) => (
                   <PrimaryButton
                     key={el.name}
                     onClick={() => {
                       window.open(el.link, "_blank");
                     }}
-                    sx={{ mr: "8px", mb: "8px" }}
+                    sx={{ mr: "8px" }}
                   >
                     {el.name}
                   </PrimaryButton>
