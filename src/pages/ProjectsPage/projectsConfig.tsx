@@ -1,3 +1,12 @@
+import ShopIcon from "@mui/icons-material/Shop";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+
+const iconStyle = {
+  color: "#FFFFFF",
+  fontSize: 28,
+};
+
 export const projectsConfig = {
   projects: [
     {
@@ -6,13 +15,10 @@ export const projectsConfig = {
       title: "Quizzify",
       description:
         "Trivia quiz android app developed using React Native and Express.js.",
-      buttons: [
+      icons: [
         {
-          name: "GITHUB",
-          link: "https://github.com/chkosta/quizzify",
-        },
-        {
-          name: "PLAYSTORE",
+          name: "View App",
+          icon: <ShopIcon style={iconStyle} />,
           link: "https://play.google.com/store/apps/details?id=com.quizzify",
         },
       ],
@@ -21,10 +27,11 @@ export const projectsConfig = {
       id: 1,
       group: "WEB DEVELOPMENT",
       title: "Personal Website",
-      description: "Web app for my personal website.",
-      buttons: [
+      description: "Web app for my personal website developed using React.js.",
+      icons: [
         {
-          name: "GITHUB",
+          name: "View Repo",
+          icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/chkosta.github.io",
         },
       ],
@@ -35,9 +42,10 @@ export const projectsConfig = {
       title: "LeetCode Solutions",
       description:
         "Solutions to various LeetCode algorithmic problems using Python.",
-      buttons: [
+      icons: [
         {
-          name: "GITHUB",
+          name: "View Repo",
+          icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/leetcode-solutions",
         },
       ],
@@ -45,24 +53,28 @@ export const projectsConfig = {
     {
       id: 3,
       group: "THESIS",
-      title: "Sim2Real Methods In Robotics Tasks",
+      title: "Experimenting with Sim2Real Methods in Robotics Tasks",
       description:
         "Solutions to three robotic problems using reinforcement learning.",
-      buttons: [
+      icons: [
         {
-          name: "GITHUB",
+          name: "View Repo",
+          icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/MEngThesis",
         },
         {
-          name: "VIDEO 1",
+          name: "View Pendulum Environment Video",
+          icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=qVi099TT53o",
         },
         {
-          name: "VIDEO 2",
+          name: "View Arm Environment Video",
+          icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=sS8tYinLqds",
         },
         {
-          name: "VIDEO 3",
+          name: "View Franka Environment Video",
+          icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=G_Xds8WAR4A",
         },
       ],

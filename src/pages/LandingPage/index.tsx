@@ -23,6 +23,8 @@ const LandingPage = () => {
               width: "40%",
               height: "auto",
               m: "2%",
+              borderRadius: "50%",
+              aspectRatio: "1/1",
             }}
           />
         </Box>

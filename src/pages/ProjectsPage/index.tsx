@@ -1,8 +1,15 @@
 import React from "react";
 import { IProjectsPageProps } from "./types";
 import { useTheme } from "@mui/material/styles";
-import { Box, Card, Grid, Typography, useMediaQuery } from "@mui/material";
-import { PrimaryButton } from "../../components/shared/StyledButtons";
+import {
+  Box,
+  Card,
+  Grid,
+  Typography,
+  useMediaQuery,
+  IconButton,
+  Tooltip,
+} from "@mui/material";
 import { projectsConfig } from "./projectsConfig";
 
 const ProjectsPage = (props: IProjectsPageProps) => {
@@ -38,22 +45,17 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 </Typography>
               </Box>
 
-              <Box
-                sx={{
-                  display: "flex",
-                  mt: "10px",
-                }}
-              >
-                {el.buttons.map((el) => (
-                  <PrimaryButton
-                    key={el.name}
-                    onClick={() => {
-                      window.open(el.link, "_blank");
-                    }}
-                    sx={{ mr: "8px" }}
-                  >
-                    {el.name}
-                  </PrimaryButton>
+              <Box sx={{ display: "flex", gap: 1 }}>
+                {el.icons.map((el, index) => (
+                  <Tooltip title={el.name} key={index}>
+                    <IconButton
+                      onClick={() => {
+                        window.open(el.link, "_blank");
+                      }}
+                    >
+                      {el.icon}
+                    </IconButton>
+                  </Tooltip>
                 ))}
               </Box>
             </Card>
