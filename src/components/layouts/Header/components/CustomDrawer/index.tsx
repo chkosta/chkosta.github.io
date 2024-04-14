@@ -177,7 +177,7 @@ export default function CustomDrawer({
                 icon: <MailIcon />,
               },
               {
-                text: "Linked In",
+                text: "Linked-In",
                 link: "https://www.linkedin.com/in/christoscosta/",
                 icon: <LinkedInIcon />,
               },

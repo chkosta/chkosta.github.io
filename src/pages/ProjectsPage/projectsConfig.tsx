@@ -14,7 +14,7 @@ export const projectsConfig = {
       group: "MOBILE DEVELOPMENT",
       title: "Quizzify",
       description:
-        "Trivia quiz android app developed using React Native and Express.js.",
+        "Trivia android app developed using React Native and Express.js.",
       icons: [
         {
           name: "View App",
@@ -27,7 +27,7 @@ export const projectsConfig = {
       id: 1,
       group: "WEB DEVELOPMENT",
       title: "Personal Website",
-      description: "Web app for my personal website developed using React.js.",
+      description: "Web app for my personal website.",
       icons: [
         {
           name: "View Repo",

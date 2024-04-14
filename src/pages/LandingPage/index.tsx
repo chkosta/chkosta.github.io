@@ -21,6 +21,7 @@ const LandingPage = () => {
             src="images/profile.jpg"
             sx={{
               width: "40%",
+              "@media (max-width:600px)": { width: "60%" },
               height: "auto",
               m: "2%",
               borderRadius: "50%",
