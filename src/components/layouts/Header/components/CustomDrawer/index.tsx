@@ -9,7 +9,6 @@ import {
   List,
   ListItem,
   ListItemButton,
-  ListItemText,
   ListItemIcon,
   useMediaQuery,
 } from "@mui/material";
@@ -147,7 +146,7 @@ export default function CustomDrawer({
                     }
                   }}
                   sx={{
-                    padding: "3px 6px",
+                    padding: "4px ",
                   }}
                 >
                   <ListItemIcon
@@ -155,7 +154,7 @@ export default function CustomDrawer({
                   >
                     {el.icon}
                   </ListItemIcon>
-                  <ListItemText primary={el.text} />
+                  <Typography fontSize={14}>{el.text}</Typography>
                 </ListItemButton>
               </ListItem>
             ))}
@@ -165,7 +164,7 @@ export default function CustomDrawer({
         <Box>
           <Divider sx={{ backgroundColor: theme.palette.primary.light }} />
 
-          <Typography ml={3} mt={2}>
+          <Typography fontSize={14} ml={3} mt={2}>
             Social
           </Typography>
 
@@ -203,7 +202,7 @@ export default function CustomDrawer({
                   href={el.link}
                   target="_blank"
                   sx={{
-                    padding: "3px 6px",
+                    padding: "4px",
                   }}
                 >
                   <ListItemIcon
@@ -211,7 +210,7 @@ export default function CustomDrawer({
                   >
                     {el.icon}
                   </ListItemIcon>
-                  <ListItemText primary={el.text} />
+                  <Typography fontSize={14}>{el.text}</Typography>
                 </ListItemButton>
               </ListItem>
             ))}

@@ -12,8 +12,8 @@ const ToolingPage = (props: IToolingPageProps) => {
       <Typography variant="h5" fontWeight={"bold"}>
         Libraries and Frameworks
       </Typography>
-      <Typography component="ul" mt={2}>
-        <Typography component="li" fontSize={18}>
+      <Typography component="ul" mt={1}>
+        <Typography component="li">
           <a
             href="https://www.npmjs.com/"
             target="_blank"
@@ -24,7 +24,7 @@ const ToolingPage = (props: IToolingPageProps) => {
           </a>{" "}
           for package management
         </Typography>
-        <Typography component="li" fontSize={18}>
+        <Typography component="li">
           <a
             href="https://reactjs.org/"
             target="_blank"
@@ -35,7 +35,7 @@ const ToolingPage = (props: IToolingPageProps) => {
           </a>{" "}
           for the ecosystem
         </Typography>
-        <Typography component="li" fontSize={18}>
+        <Typography component="li">
           <a
             href="https://pages.github.com/"
             target="_blank"
@@ -51,8 +51,8 @@ const ToolingPage = (props: IToolingPageProps) => {
       <Typography variant="h5" fontWeight={"bold"} mt={8}>
         User Interface
       </Typography>
-      <Typography component="ul" mt={2}>
-        <Typography component="li" fontSize={18}>
+      <Typography component="ul" mt={1}>
+        <Typography component="li">
           <a
             href="https://mui.com/"
             target="_blank"
@@ -63,7 +63,7 @@ const ToolingPage = (props: IToolingPageProps) => {
           </a>{" "}
           for the UI components
         </Typography>
-        <Typography component="li" fontSize={18}>
+        <Typography component="li">
           <a
             href="https://mui.com/material-ui/material-icons/"
             target="_blank"
@@ -74,12 +74,10 @@ const ToolingPage = (props: IToolingPageProps) => {
           </a>{" "}
           for the icons
         </Typography>
-        <Typography component="li" fontSize={18}>
-          Roboto font
-        </Typography>
+        <Typography component="li">Roboto font</Typography>
       </Typography>
 
-      <Typography fontSize={18} mt={8}>
+      <Typography mt={8}>
         Website code is open source at{" "}
         <a
           href="https://github.com/chkosta/chkosta.github.io"

@@ -26,23 +26,19 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-between",
-                padding: "5%",
+                padding: "4%",
                 width: "360px",
-                height: "270px",
+                height: "250px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}
             >
               <Box>
-                <Typography fontSize={16} gutterBottom>
-                  {el.group}
-                </Typography>
-                <Typography fontSize={22} fontWeight={"bold"} gutterBottom>
+                <Typography gutterBottom>{el.group}</Typography>
+                <Typography fontSize={20} fontWeight={"bold"} gutterBottom>
                   {el.title}
                 </Typography>
-                <Typography fontSize={16} gutterBottom>
-                  {el.description}
-                </Typography>
+                <Typography gutterBottom>{el.description}</Typography>
               </Box>
 
               <Box sx={{ display: "flex", gap: 1 }}>

@@ -40,7 +40,7 @@ export default function Header() {
   const theme = useTheme();
   const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
   const [open, setOpen] = React.useState(false);
-  const [selectedItem, setSelectedItem] = React.useState("Christos Costa");
+  const [selectedItem, setSelectedItem] = React.useState("");
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -88,7 +88,7 @@ export default function Header() {
               <Typography></Typography>
             )}
 
-            <Link to="/" onClick={() => setSelectedItem("Christos Costa")}>
+            <Link to="/" onClick={() => setSelectedItem("")}>
               <Avatar
                 alt="Profile"
                 src="images/profile.jpg"
