@@ -44,7 +44,7 @@ const LandingPage = () => {
             "@media (max-width:600px)": { fontSize: "1.2rem" },
           }}
         >
-          Full Stack Developer
+          Software Engineer
         </Typography>
 
         <Grid container justifyContent="center" spacing={2} mt="8%">

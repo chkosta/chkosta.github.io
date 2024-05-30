@@ -10,11 +10,10 @@ const iconStyle = {
 export const projectsConfig = {
   projects: [
     {
-      id: 0,
       group: "MOBILE DEVELOPMENT",
       title: "Quizzify",
       description:
-        "Trivia android app developed using React Native and Express.js.",
+        "Mobile app which offers users an engaging platform to participate in quiz games across various categories and difficulty levels.",
       icons: [
         {
           name: "View App",
@@ -24,7 +23,6 @@ export const projectsConfig = {
       ],
     },
     {
-      id: 1,
       group: "WEB DEVELOPMENT",
       title: "Personal Website",
       description: "Web app for my personal website.",
@@ -37,22 +35,20 @@ export const projectsConfig = {
       ],
     },
     {
-      id: 2,
-      group: "ONLINE LEARNING",
-      title: "LeetCode Solutions",
+      group: "WEB DEVELOPMENT",
+      title: "Crowdsourced data collection and analysis system HTTP traffic",
       description:
-        "Solutions to various LeetCode algorithmic problems using Python.",
+        "Web app developed for a course in Web Development at University of Patras.",
       icons: [
         {
           name: "View Repo",
           icon: <GitHubIcon style={iconStyle} />,
-          link: "https://github.com/chkosta/leetcode-solutions",
+          link: "https://github.com/chkosta/WebProject",
         },
       ],
     },
     {
-      id: 3,
-      group: "THESIS",
+      group: "RL SOLUTION",
       title: "Experimenting with Sim2Real Methods in Robotics Tasks",
       description:
         "Solutions to three robotic problems using reinforcement learning.",
@@ -76,6 +72,19 @@ export const projectsConfig = {
           name: "View Franka Environment Video",
           icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=G_Xds8WAR4A",
+        },
+      ],
+    },
+    {
+      group: "ONLINE LEARNING",
+      title: "LeetCode Solutions",
+      description:
+        "Solutions to various LeetCode algorithmic problems using Python.",
+      icons: [
+        {
+          name: "View Repo",
+          icon: <GitHubIcon style={iconStyle} />,
+          link: "https://github.com/chkosta/leetcode-solutions",
         },
       ],
     },
