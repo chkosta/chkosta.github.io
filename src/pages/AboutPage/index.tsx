@@ -22,8 +22,8 @@ const AboutPage = (props: IAboutPageProps) => {
         </Typography>
         <Typography component="li">
           He pursued his academic interests by completing the Computer
-          Engineering and Informatics master's degree from the University of
-          Patras.
+          Engineering and Informatics Integrated Master's Degree from the
+          University of Patras.
         </Typography>
         <Typography component="li">
           He is currently a skilled Full-Stack Developer, proficient in a wide
