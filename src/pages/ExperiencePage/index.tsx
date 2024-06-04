@@ -13,7 +13,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         Summary
       </Typography>
       <Typography mt={1}>
-        Enthusiastic and skilled Full Stack Developer with a passion for
+        Enthusiastic and skilled Full-Stack Developer with a passion for
         creating innovative digital solutions. With a solid foundation in both
         front-end and back-end technologies, I bring creativity and expertise to
         every project I undertake. Experienced in collaborating with
@@ -28,7 +28,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         Work Experience
       </Typography>
       <Typography mt={1}>
-        <span style={{ fontWeight: "bold" }}>Software Developer</span>,{" "}
+        <span style={{ fontWeight: "bold" }}>Full-Stack Developer</span>,{" "}
         <span style={{ fontStyle: "italic" }}>Cellock Ltd</span>, Nicosia,
         Cyprus (Oct 2022 - Present)
       </Typography>

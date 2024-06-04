@@ -26,7 +26,7 @@ const AboutPage = (props: IAboutPageProps) => {
           Patras.
         </Typography>
         <Typography component="li">
-          He is currently a skilled full stack developer, proficient in a wide
+          He is currently a skilled Full-Stack Developer, proficient in a wide
           range of technologies and frameworks.
         </Typography>
       </Typography>
