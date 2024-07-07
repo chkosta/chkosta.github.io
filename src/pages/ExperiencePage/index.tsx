@@ -33,8 +33,12 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         Cyprus (Oct 2022 - Present)
       </Typography>
       <Typography mt={1}>
-        Developed full-stack web applications performing coding, debugging and
-        unit testing tasks in support of projects.
+        Developed and maintained full-stack web applications performing coding,
+        debugging and testing tasks in support of projects.
+      </Typography>
+      <Typography mt={1}>
+        Technologies: Typescript, Next.js, Node.js, Express.js, JWT, PostgreSQL,
+        OutSystems
       </Typography>
 
       <Typography mt={4}>
@@ -56,6 +60,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1}>
         Thesis: Experimenting with Sim2Real Methods in Robotics Tasks.
+      </Typography>
+      <Typography mt={1}>
+        Technologies: Python, OpenAI Gym, PyTorch, Stable-Baselines3, RobotDART,
+        NumPy, Matplotlib, Linux
       </Typography>
 
       <Typography fontSize={18} fontWeight={"bold"} mt={4}>
@@ -82,14 +90,14 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         and Machine Learning.
       </Typography>
 
-      <Typography mt={4}>
+      {/* <Typography mt={4}>
         <span style={{ fontWeight: "bold" }}>High School</span>,{" "}
         <span style={{ fontStyle: "italic" }}>Lyceum Agiou Georgiou</span>,
         Larnaca, Cyprus (Sep 2011 - Sep 2014)
       </Typography>
       <Typography mt={1}>
         Specialized in Mathematics, Physics & Informatics.
-      </Typography>
+      </Typography> */}
 
       <Typography mt={5}>
         <span style={{ fontWeight: "bold" }}>

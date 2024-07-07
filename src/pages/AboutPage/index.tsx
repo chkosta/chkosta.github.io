@@ -12,7 +12,7 @@ const AboutPage = (props: IAboutPageProps) => {
       <Typography variant="h5" fontWeight={"bold"}>
         Background
       </Typography>
-      <Typography component="ul" sx={{ mt: 1 }}>
+      <Box component="ul" sx={{ mt: 1 }}>
         <Typography component="li">
           Christos was born and raised in Larnaca, Cyprus.
         </Typography>
@@ -29,7 +29,7 @@ const AboutPage = (props: IAboutPageProps) => {
           He is currently a skilled Full-Stack Developer, proficient in a wide
           range of technologies and frameworks.
         </Typography>
-      </Typography>
+      </Box>
     </Box>
   );
 };

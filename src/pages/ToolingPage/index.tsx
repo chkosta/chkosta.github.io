@@ -12,7 +12,7 @@ const ToolingPage = (props: IToolingPageProps) => {
       <Typography variant="h5" fontWeight={"bold"}>
         Libraries and Frameworks
       </Typography>
-      <Typography component="ul" mt={1}>
+      <Box component="ul" mt={1}>
         <Typography component="li">
           <a
             href="https://www.npmjs.com/"
@@ -46,12 +46,12 @@ const ToolingPage = (props: IToolingPageProps) => {
           </a>{" "}
           for hosting the site
         </Typography>
-      </Typography>
+      </Box>
 
       <Typography variant="h5" fontWeight={"bold"} mt={8}>
         User Interface
       </Typography>
-      <Typography component="ul" mt={1}>
+      <Box component="ul" mt={1}>
         <Typography component="li">
           <a
             href="https://mui.com/"
@@ -75,7 +75,7 @@ const ToolingPage = (props: IToolingPageProps) => {
           for the icons
         </Typography>
         <Typography component="li">Roboto font</Typography>
-      </Typography>
+      </Box>
 
       <Typography mt={8}>
         Website code is open source at{" "}
