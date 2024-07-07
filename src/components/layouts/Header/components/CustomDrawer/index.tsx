@@ -17,6 +17,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import HomeIcon from "@mui/icons-material/Home";
 import WorkIcon from "@mui/icons-material/Work";
 import CodeIcon from "@mui/icons-material/Code";
+import TerminalIcon from "@mui/icons-material/Terminal";
 import BuildIcon from "@mui/icons-material/Build";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -27,6 +28,7 @@ import AboutPage from "../../../../../pages/AboutPage";
 import ExperiencePage from "../../../../../pages/ExperiencePage";
 import ToolingPage from "../../../../../pages/ToolingPage";
 import ProjectsPage from "../../../../../pages/ProjectsPage";
+import TechnologiesPage from "../../../../../pages/TechnologiesPage";
 
 const drawerWidth = 240;
 
@@ -122,6 +124,11 @@ export default function CustomDrawer({
               { text: "About", link: "/about", icon: <HomeIcon /> },
               { text: "Experience", link: "/experience", icon: <WorkIcon /> },
               { text: "Projects", link: "/projects", icon: <CodeIcon /> },
+              {
+                text: "Technologies",
+                link: "/technologies",
+                icon: <TerminalIcon />,
+              },
               { text: "Made With", link: "/tooling", icon: <BuildIcon /> },
             ].map((el, index) => (
               <ListItem
@@ -225,6 +232,7 @@ export default function CustomDrawer({
           <Route path="/about" Component={AboutPage} />
           <Route path="/experience" Component={ExperiencePage} />
           <Route path="/projects" Component={ProjectsPage} />
+          <Route path="/technologies" Component={TechnologiesPage} />
           <Route path="/tooling" Component={ToolingPage} />
         </Routes>
       </Main>
