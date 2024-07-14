@@ -13,7 +13,7 @@ export const projectsConfig = {
       group: "MOBILE DEVELOPMENT",
       title: "Quizzify",
       description:
-        "Mobile app which offers users an engaging platform to participate in quiz games across various categories and difficulty levels.",
+        "Mobile app which offers users an engaging platform to participate in games across various categories and difficulty levels.",
       icons: [
         {
           name: "View App",
