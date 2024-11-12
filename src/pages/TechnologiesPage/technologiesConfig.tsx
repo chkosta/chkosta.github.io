@@ -2,7 +2,7 @@ export const technologiesConfig = {
   technologies: [
     {
       group: "Frontend Frameworks",
-      technologies: ["React.js", "Next.js", "React Native"],
+      technologies: ["React.js", "Next.js", "React Native", "Expo"],
     },
     {
       group: "Backend Frameworks",
