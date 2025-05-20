@@ -47,35 +47,11 @@ const LandingPage = () => {
           Software Engineer
         </Typography>
 
-        <Grid container justifyContent="center" spacing={2} mt="8%">
+        <Grid container justifyContent="center" spacing={2} mt="3%">
           <Grid item xs={12} md={5}>
             <Link to="/about">
-              <PrimaryButton sx={{ width: "80%" }}>
+              <PrimaryButton sx={{ width: "60%" }}>
                 <Typography variant="h6">About</Typography>
-              </PrimaryButton>
-            </Link>
-          </Grid>
-
-          <Grid item xs={12} md={5}>
-            <Link to="/experience">
-              <PrimaryButton sx={{ width: "80%" }}>
-                <Typography variant="h6">Experience</Typography>
-              </PrimaryButton>
-            </Link>
-          </Grid>
-
-          <Grid item xs={12} md={5}>
-            <Link to="/projects">
-              <PrimaryButton sx={{ width: "80%" }}>
-                <Typography variant="h6">Projects</Typography>
-              </PrimaryButton>
-            </Link>
-          </Grid>
-
-          <Grid item xs={12} md={5}>
-            <Link to="/technologies">
-              <PrimaryButton sx={{ width: "80%" }}>
-                <Typography variant="h6">Technologies</Typography>
               </PrimaryButton>
             </Link>
           </Grid>
