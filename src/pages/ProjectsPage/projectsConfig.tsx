@@ -13,10 +13,10 @@ export const projectsConfig = {
       group: "MOBILE DEVELOPMENT",
       title: "Quizzify",
       description:
-        "Mobile app which offers users an engaging platform to participate in games across various categories and difficulty levels.",
+        "Quizzify is a mobile app offering a collection of educational and logic-based games, featuring custom game creation, real-time multiplayer, and personalized progress tracking.",
       icons: [
         {
-          name: "View App",
+          name: "Google Play",
           icon: <ShopIcon style={iconStyle} />,
           link: "https://play.google.com/store/apps/details?id=com.quizzify",
         },
@@ -28,7 +28,7 @@ export const projectsConfig = {
       description: "Web app for my personal website.",
       icons: [
         {
-          name: "View Repo",
+          name: "Github",
           icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/chkosta.github.io",
         },
@@ -41,7 +41,7 @@ export const projectsConfig = {
         "Web app developed for a course in Web Development at University of Patras.",
       icons: [
         {
-          name: "View Repo",
+          name: "Github",
           icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/WebProject",
         },
@@ -54,22 +54,22 @@ export const projectsConfig = {
         "Solutions to three robotic problems using reinforcement learning.",
       icons: [
         {
-          name: "View Repo",
+          name: "Github",
           icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/MEngThesis",
         },
         {
-          name: "View Pendulum Environment Video",
+          name: "Youtube (Video 1)",
           icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=qVi099TT53o",
         },
         {
-          name: "View Arm Environment Video",
+          name: "Youtube (Video 2)",
           icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=sS8tYinLqds",
         },
         {
-          name: "View Franka Environment Video",
+          name: "Youtube (Video 3)",
           icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=G_Xds8WAR4A",
         },
@@ -82,7 +82,7 @@ export const projectsConfig = {
         "Solutions to various LeetCode algorithmic problems using Python.",
       icons: [
         {
-          name: "View Repo",
+          name: "Github",
           icon: <GitHubIcon style={iconStyle} />,
           link: "https://github.com/chkosta/leetcode-solutions",
         },

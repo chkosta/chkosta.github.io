@@ -10,7 +10,6 @@ import {
   ListItem,
   ListItemButton,
   ListItemIcon,
-  useMediaQuery,
 } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
@@ -32,25 +31,12 @@ import TechnologiesPage from "../../../../../pages/TechnologiesPage";
 
 const drawerWidth = 240;
 
-const Main = styled(Box, {
-  shouldForwardProp: (prop) => prop !== "open" && prop !== "isNotDesktop",
-})<{
-  open?: boolean;
-  isNotDesktop?: boolean;
-}>(({ theme, open, isNotDesktop }) => ({
+const Main = styled(Box)(({ theme }) => ({
   flexGrow: 1,
   padding: theme.spacing(3),
   transition: theme.transitions.create("margin", {
     easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
-  }),
-  ...(!isNotDesktop && { marginLeft: `-${drawerWidth}px` }),
-  ...(open && {
-    transition: theme.transitions.create("margin", {
-      easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
-    }),
-    ...(!isNotDesktop && { marginLeft: 0 }),
   }),
 }));
 
@@ -77,7 +63,6 @@ export default function CustomDrawer({
   handleDrawerClose,
 }: ICustomDrawerProps) {
   const theme = useTheme();
-  const isNotDesktop = !useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <>
@@ -94,7 +79,7 @@ export default function CustomDrawer({
             justifyContent: "space-between",
           },
         }}
-        variant={isNotDesktop ? "temporary" : "persistent"}
+        variant="temporary"
         anchor="left"
         open={open}
         onClose={handleDrawerClose}
@@ -148,9 +133,7 @@ export default function CustomDrawer({
                   to={el.link}
                   onClick={() => {
                     setSelectedItem(el.text);
-                    if (isNotDesktop) {
-                      handleDrawerClose();
-                    }
+                    handleDrawerClose();
                   }}
                   sx={{
                     padding: "4px ",
@@ -225,7 +208,7 @@ export default function CustomDrawer({
         </Box>
       </Drawer>
 
-      <Main open={open} isNotDesktop={isNotDesktop}>
+      <Main>
         <DrawerHeader />
         <Routes>
           <Route path="/" Component={LandingPage} />

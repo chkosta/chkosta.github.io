@@ -8,7 +8,7 @@ const AboutPage = (props: IAboutPageProps) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
+    <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
       <Typography variant="h5" fontWeight={"bold"}>
         Background
       </Typography>

@@ -8,7 +8,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
+    <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
       <Typography variant="h5" fontWeight={"bold"}>
         Summary
       </Typography>
@@ -37,8 +37,8 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         debugging and testing tasks in support of projects.
       </Typography>
       <Typography mt={1}>
-        Technologies: Typescript, Next.js, Node.js, Express.js, JWT, PostgreSQL,
-        OutSystems
+        Technologies: Typescript, Next.js, Node.js, Express.js, JWT, PostgreSQL
+        {/* , OutSystems */}
       </Typography>
 
       <Typography mt={4}>

@@ -17,7 +17,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
   return (
-    <Box sx={{ ...(!isMobile && { m: "0 80px" }) }}>
+    <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
       <Grid container spacing={5} justifyContent="center">
         {projectsConfig.projects.map((el, index) => (
           <Grid item key={index}>
