@@ -54,11 +54,6 @@ export const projectsConfig = {
         "Solutions to three robotic problems using reinforcement learning.",
       icons: [
         {
-          name: "Github",
-          icon: <GitHubIcon style={iconStyle} />,
-          link: "https://github.com/chkosta/MEngThesis",
-        },
-        {
           name: "Youtube (Video 1)",
           icon: <YouTubeIcon style={iconStyle} />,
           link: "https://www.youtube.com/watch?v=qVi099TT53o",

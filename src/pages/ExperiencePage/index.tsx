@@ -33,12 +33,11 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         Cyprus (Oct 2022 - Present)
       </Typography>
       <Typography mt={1}>
-        Developed and maintained full-stack web applications performing coding,
-        debugging and testing tasks in support of projects.
+        Developed and maintained full-stack web applications, handling coding,
+        debugging, and testing tasks.
       </Typography>
       <Typography mt={1}>
         Technologies: Typescript, Next.js, Node.js, Express.js, JWT, PostgreSQL
-        {/* , OutSystems */}
       </Typography>
 
       <Typography mt={4}>
