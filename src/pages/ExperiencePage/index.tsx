@@ -52,7 +52,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1}>
         <span style={{ fontWeight: "bold" }}>
-          MEng Computer Engineering and Informatics
+          Integrated Master, Computer Engineering and Informatics
         </span>
         , <span style={{ fontStyle: "italic" }}>CEID</span>, University of
         Patras, Greece (Oct 2016 - Apr 2022)
