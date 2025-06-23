@@ -15,10 +15,8 @@ export const technologiesConfig = {
     {
       group: "Programming Languages",
       technologies: [
-        "HTML",
-        "CSS",
-        "Javascript",
         "Typescript",
+        "Javascript",
         "Python",
         "Java",
         "PHP",
