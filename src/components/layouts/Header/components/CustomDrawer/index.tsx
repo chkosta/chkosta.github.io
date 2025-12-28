@@ -21,7 +21,7 @@ import BuildIcon from "@mui/icons-material/Build";
 import MailIcon from "@mui/icons-material/Mail";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import { Routes, Route, Link } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import LandingPage from "../../../../../pages/LandingPage";
 import AboutPage from "../../../../../pages/AboutPage";
 import ExperiencePage from "../../../../../pages/ExperiencePage";
@@ -208,15 +208,17 @@ export default function CustomDrawer({
 
       <Main>
         <DrawerHeader />
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
-          <Route path="/experience" element={<ExperiencePage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/technologies" element={<TechnologiesPage />} />
-          <Route path="/tooling" element={<ToolingPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Routes>
+        <HashRouter>
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/experience" element={<ExperiencePage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/technologies" element={<TechnologiesPage />} />
+            <Route path="/tooling" element={<ToolingPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </HashRouter>
       </Main>
     </>
   );
