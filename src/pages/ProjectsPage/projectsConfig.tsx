@@ -1,3 +1,4 @@
+import LanguageIcon from "@mui/icons-material/Language";
 import ShopIcon from "@mui/icons-material/Shop";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
@@ -13,8 +14,13 @@ export const projectsConfig = {
       group: "MOBILE DEVELOPMENT",
       title: "Quizzify",
       description:
-        "Quizzify is a mobile app offering a collection of educational and logic-based games, featuring custom game creation, real-time multiplayer, and personalized progress tracking.",
+        "Quizzify is a mobile app offering a collection of educational and logic-based games.",
       icons: [
+        {
+          name: "Website",
+          icon: <LanguageIcon style={iconStyle} />,
+          link: "https://playquizzify.com",
+        },
         {
           name: "Google Play",
           icon: <ShopIcon style={iconStyle} />,
