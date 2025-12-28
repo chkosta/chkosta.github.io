@@ -6,6 +6,7 @@ import Toolbar from "@mui/material/Toolbar";
 import { Box, Typography, IconButton, Avatar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const AppBar = styled(MuiAppBar, {
   shouldForwardProp: (prop) => prop !== "open",
@@ -17,9 +18,24 @@ const AppBar = styled(MuiAppBar, {
 }));
 
 export default function Header() {
+  const location = useLocation();
   const theme = useTheme();
+
   const [open, setOpen] = React.useState(false);
   const [selectedItem, setSelectedItem] = React.useState("");
+
+  React.useEffect(() => {
+    const map: Record<string, string> = {
+      "/": "",
+      "/about": "About",
+      "/experience": "Experience",
+      "/projects": "Projects",
+      "/technologies": "Technologies",
+      "/tooling": "Made With",
+    };
+
+    setSelectedItem(map[location.pathname] ?? "");
+  }, [location.pathname]);
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -62,7 +78,7 @@ export default function Header() {
               {selectedItem}
             </Typography>
 
-            <Link to="/" onClick={() => setSelectedItem("")}>
+            <Link to="/">
               <Avatar
                 alt="Profile"
                 src="images/profile.jpg"
@@ -79,7 +95,6 @@ export default function Header() {
       <CustomDrawer
         open={open}
         selectedItem={selectedItem}
-        setSelectedItem={setSelectedItem}
         handleDrawerClose={handleDrawerClose}
       />
     </Box>

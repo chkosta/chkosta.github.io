@@ -7,11 +7,11 @@ const LandingPage = () => {
   return (
     <Box
       sx={{
-        minHeight: "80vh",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
+        minHeight: "70vh",
       }}
     >
       <Container maxWidth="md">

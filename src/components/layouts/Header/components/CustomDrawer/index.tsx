@@ -28,6 +28,7 @@ import ExperiencePage from "../../../../../pages/ExperiencePage";
 import ToolingPage from "../../../../../pages/ToolingPage";
 import ProjectsPage from "../../../../../pages/ProjectsPage";
 import TechnologiesPage from "../../../../../pages/TechnologiesPage";
+import NotFoundPage from "../../../../../pages/NotFoundPage";
 
 const drawerWidth = 240;
 
@@ -52,14 +53,12 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 interface ICustomDrawerProps {
   open: boolean;
   selectedItem: string;
-  setSelectedItem: (item: string) => void;
   handleDrawerClose: () => void;
 }
 
 export default function CustomDrawer({
   open,
   selectedItem,
-  setSelectedItem,
   handleDrawerClose,
 }: ICustomDrawerProps) {
   const theme = useTheme();
@@ -132,7 +131,6 @@ export default function CustomDrawer({
                   component={Link}
                   to={el.link}
                   onClick={() => {
-                    setSelectedItem(el.text);
                     handleDrawerClose();
                   }}
                   sx={{
@@ -211,12 +209,13 @@ export default function CustomDrawer({
       <Main>
         <DrawerHeader />
         <Routes>
-          <Route path="/" Component={LandingPage} />
-          <Route path="/about" Component={AboutPage} />
-          <Route path="/experience" Component={ExperiencePage} />
-          <Route path="/projects" Component={ProjectsPage} />
-          <Route path="/technologies" Component={TechnologiesPage} />
-          <Route path="/tooling" Component={ToolingPage} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/experience" element={<ExperiencePage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/technologies" element={<TechnologiesPage />} />
+          <Route path="/tooling" element={<ToolingPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Main>
     </>
