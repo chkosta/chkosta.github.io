@@ -13,7 +13,6 @@ import {
 } from "@mui/material";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import HomeIcon from "@mui/icons-material/Home";
 import WorkIcon from "@mui/icons-material/Work";
 import CodeIcon from "@mui/icons-material/Code";
 import TerminalIcon from "@mui/icons-material/Terminal";
@@ -23,7 +22,6 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { Routes, Route, Link } from "react-router-dom";
 import LandingPage from "../../../../../pages/LandingPage";
-import AboutPage from "../../../../../pages/AboutPage";
 import ExperiencePage from "../../../../../pages/ExperiencePage";
 import ToolingPage from "../../../../../pages/ToolingPage";
 import ProjectsPage from "../../../../../pages/ProjectsPage";
@@ -105,7 +103,6 @@ export default function CustomDrawer({
 
           <List>
             {[
-              { text: "About", link: "/about", icon: <HomeIcon /> },
               { text: "Experience", link: "/experience", icon: <WorkIcon /> },
               { text: "Projects", link: "/projects", icon: <CodeIcon /> },
               {
@@ -211,7 +208,6 @@ export default function CustomDrawer({
 
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          <Route path="/about" element={<AboutPage />} />
           <Route path="/experience" element={<ExperiencePage />} />
           <Route path="/projects" element={<ProjectsPage />} />
           <Route path="/technologies" element={<TechnologiesPage />} />

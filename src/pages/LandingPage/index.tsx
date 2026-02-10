@@ -49,9 +49,9 @@ const LandingPage = () => {
 
         <Grid container justifyContent="center" spacing={2} mt="3%">
           <Grid item xs={12} md={5}>
-            <Link to="/about">
+            <Link to="/experience">
               <PrimaryButton sx={{ width: "60%" }}>
-                <Typography variant="h6">About</Typography>
+                <Typography variant="h6">Experience</Typography>
               </PrimaryButton>
             </Link>
           </Grid>

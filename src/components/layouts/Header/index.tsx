@@ -27,7 +27,6 @@ export default function Header() {
   React.useEffect(() => {
     const map: Record<string, string> = {
       "/": "",
-      "/about": "About",
       "/experience": "Experience",
       "/projects": "Projects",
       "/technologies": "Technologies",
