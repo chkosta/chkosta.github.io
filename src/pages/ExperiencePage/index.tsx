@@ -10,93 +10,119 @@ const ExperiencePage = (props: IExperiencePageProps) => {
   return (
     <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
       <Typography variant="h5" fontWeight={"bold"}>
-        Summary
+        PROFESSIONAL SUMMARY
       </Typography>
       <Typography mt={1}>
-        Enthusiastic and skilled Full-Stack Developer with a passion for
-        creating innovative digital solutions. With a solid foundation in both
-        front-end and back-end technologies, I bring creativity and expertise to
-        every project I undertake. Experienced in collaborating with
-        cross-functional teams to deliver high-quality, user-centric
-        applications. Proficient in a variety of programming languages and
-        frameworks, I am dedicated to staying updated with emerging technologies
-        to continually enhance my skills and contribute effectively to the
-        success of any development initiative.
+        Full-Stack Developer with expertise in designing, developing, and
+        deploying scalable web applications and robust backend services.
+        Proficient in TypeScript, React.js, Next.js, Node.js, and relational
+        databases. Proven track record of optimizing application performance,
+        building secure APIs, and delivering reliable, production-grade business
+        solutions.
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={6}>
-        Work Experience
+      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+        PROFESSIONAL EXPERIENCE
       </Typography>
-      <Typography mt={1}>
-        <span style={{ fontWeight: "bold" }}>Full-Stack Developer</span>,{" "}
-        <span style={{ fontStyle: "italic" }}>Cellock Ltd</span>, Nicosia,
-        Cyprus (Oct 2022 - Present)
+      <Typography mt={1} fontSize={18}>
+        <span style={{ fontWeight: "bold" }}>Full-Stack Developer</span> |
+        Cellock Ltd (Nicosia, Cyprus)
       </Typography>
-      <Typography mt={1}>
-        Developed and maintained full-stack web applications, handling coding,
-        debugging, and testing tasks.
-      </Typography>
-      <Typography mt={1}>
-        Technologies: Typescript, Next.js, Node.js, Express.js, JWT, PostgreSQL
+      <Typography mt={1} component="ul">
+        <li>
+          Develop and maintain production-grade web applications and backend
+          services using React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
+        </li>
+        <li>
+          Design and implement secure, high-performance REST APIs with
+          third-party integrations and robust authentication/authorization
+          systems.
+        </li>
+        <li>
+          Contributed to the modernization and scaling of a core accounting
+          microservice, improving maintainability, performance, and
+          extensibility within a broader microservices architecture.
+        </li>
+        <li>
+          Collaborate daily within cross-functional teams in an Agile/Scrum
+          structure, converting complex business requirements into clean,
+          self-documenting, and maintainable code.
+        </li>
+        <li>
+          Participate in code reviews and enforce best practices to improve code
+          quality and team productivity.
+        </li>
       </Typography>
 
-      <Typography mt={4}>
-        <span style={{ fontWeight: "bold" }}>Military Service</span>,{" "}
-        <span style={{ fontStyle: "italic" }}>Cypriot National Guard</span>,
-        Larnaca, Cyprus (Jul 2014 - Jul 2016)
+      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+        CORE PROJECTS
       </Typography>
-      <Typography mt={1}>Served my military service as a Corporal.</Typography>
+      <Typography mt={1} fontSize={18}>
+        <span style={{ fontWeight: "bold" }}>Quizzify</span> | Mobile
+        Application
+      </Typography>
+      <Typography mt={1} component="ul">
+        <li>
+          Built and launched an Android mobile application featuring real-time
+          multiplayer games, custom game creation, competitive leaderboards,
+          ranking systems, and player progression tracking.
+        </li>
+        <li>
+          Developed the frontend using React Native, Expo, and TypeScript,
+          delivering a responsive and engaging experience across Android
+          devices.
+        </li>
+        <li>
+          Architected backend services with Node.js, Express.js, Socket.IO, and
+          PostgreSQL to support low-latency gameplay, real-time communication,
+          and persistent user data.
+        </li>
+        <li>
+          Implemented JWT-based authentication, user management, and secure
+          session handling to enable reliable access and data protection.
+        </li>
+      </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={6}>
-        Education
+      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+        EDUCATION & ACADEMIC RESEARCH
       </Typography>
-      <Typography mt={1}>
+      <Typography mt={1} fontSize={18}>
         <span style={{ fontWeight: "bold" }}>
-          Integrated Master, Computer Engineering and Informatics
-        </span>
-        , <span style={{ fontStyle: "italic" }}>CEID</span>, University of
-        Patras, Greece (Oct 2016 - Apr 2022)
+          Integrated Master in Computer Engineering & Informatics
+        </span>{" "}
+        | University of Patras (Patras, Greece)
       </Typography>
       <Typography mt={1}>
-        Thesis: Experimenting with Sim2Real Methods in Robotics Tasks.
+        <span style={{ fontWeight: "bold" }}>Thesis:</span> Experimenting with
+        Sim2Real Methods in Robotics Tasks
       </Typography>
-      <Typography mt={1}>
-        Technologies: Python, OpenAI Gym, PyTorch, Stable-Baselines3, RobotDART,
-        NumPy, Matplotlib, Linux
+      <Typography mt={1} component="ul">
+        <li>
+          Investigated Sim2Real transfer in robotics by evaluating Domain
+          Randomization as a method for bridging the reality gap between
+          simulated and physical robotic systems. Developed and benchmarked
+          Reinforcement Learning agents across multiple control tasks, including
+          pendulum stabilization, robotic arm joint control, and manipulation
+          with the Franka Emika robot. Demonstrated improved policy robustness
+          and cross-domain generalization through systematic experimentation
+          using Python, PyTorch, Stable-Baselines3, RobotDART, and OpenAI Gym.
+        </li>
       </Typography>
 
-      <Typography fontSize={18} fontWeight={"bold"} mt={4}>
-        Other
+      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+        CERTIFICATIONS
       </Typography>
-      <Typography mt={1}>
-        <span style={{ fontWeight: "bold" }}>Online learning</span>,{" "}
-        <span style={{ fontStyle: "italic" }}>LeetCode</span> (Oct 2023 -
-        Present)
+      <Typography mt={1} fontSize={18}>
+        <span style={{ fontWeight: "bold" }}>Deep Learning Specialization</span>{" "}
+        | DeepLearning.AI
       </Typography>
-      <Typography mt={1}>
-        Actively engaged in solving algorithmic problems using Python.
+      <Typography mt={1} component="ul">
+        <li>
+          Completed a five-course specialization covering neural networks, deep
+          learning, machine learning, convolutional neural networks (CNNs),
+          sequence models, and AI best practices.
+        </li>
       </Typography>
-
-      <Typography mt={4}>
-        <span style={{ fontWeight: "bold" }}>Online courses</span>,{" "}
-        <span style={{ fontStyle: "italic" }}>Coursera</span> (May 2022 - Aug
-        2022)
-      </Typography>
-      <Typography mt={1}>
-        Attended and completed the Deep Learning Specialization from
-        DeepLearning.AI consisting of 5 online courses covering a very broad
-        range of topics, including Software Engineering, Artificial Intelligence
-        and Machine Learning.
-      </Typography>
-
-      {/* <Typography mt={4}>
-        <span style={{ fontWeight: "bold" }}>High School</span>,{" "}
-        <span style={{ fontStyle: "italic" }}>Lyceum Agiou Georgiou</span>,
-        Larnaca, Cyprus (Sep 2011 - Sep 2014)
-      </Typography>
-      <Typography mt={1}>
-        Specialized in Mathematics, Physics & Informatics.
-      </Typography> */}
 
       <Typography mt={5}>
         <span style={{ fontWeight: "bold" }}>
