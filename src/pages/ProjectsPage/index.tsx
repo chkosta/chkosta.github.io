@@ -18,7 +18,7 @@ const ProjectsPage = (props: IProjectsPageProps) => {
 
   return (
     <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center">
         {projectsConfig.projects.map((el, index) => (
           <Grid item key={index}>
             <Card
@@ -27,18 +27,22 @@ const ProjectsPage = (props: IProjectsPageProps) => {
                 flexDirection: "column",
                 justifyContent: "space-between",
                 padding: "4%",
-                width: "360px",
-                height: "250px",
+                width: "320px",
+                height: "200px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}
             >
               <Box>
-                <Typography gutterBottom>{el.group}</Typography>
-                <Typography fontSize={20} fontWeight={"bold"} gutterBottom>
+                <Typography fontSize={12} gutterBottom>
+                  {el.group}
+                </Typography>
+                <Typography fontSize={16} fontWeight={"bold"} gutterBottom>
                   {el.title}
                 </Typography>
-                <Typography gutterBottom>{el.description}</Typography>
+                <Typography fontSize={14} gutterBottom>
+                  {el.description}
+                </Typography>
               </Box>
 
               <Box sx={{ display: "flex", gap: 1 }}>

@@ -5,7 +5,7 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 
 const iconStyle = {
   color: "#FFFFFF",
-  fontSize: 28,
+  fontSize: 20,
 };
 
 export const projectsConfig = {

@@ -10,7 +10,7 @@ const TechnologiesPage = (props: ITechnologiesPageProps) => {
 
   return (
     <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
-      <Grid container spacing={5} justifyContent="center">
+      <Grid container spacing={2} justifyContent="center">
         {technologiesConfig.technologies.map((el, index) => (
           <Grid item key={index}>
             <Card
@@ -20,18 +20,18 @@ const TechnologiesPage = (props: ITechnologiesPageProps) => {
                 justifyContent: "space-between",
                 paddingX: "10%",
                 paddingY: "4%",
-                width: "360px",
-                height: "250px",
+                width: "320px",
+                height: "200px",
                 borderRadius: "5%",
                 backgroundColor: theme.palette.primary.dark,
               }}
             >
               <Box>
                 <Typography
-                  gutterBottom
-                  textAlign={"center"}
-                  fontSize={20}
+                  fontSize={16}
                   fontWeight={"bold"}
+                  textAlign={"center"}
+                  gutterBottom
                 >
                   {el.group}
                 </Typography>
@@ -40,11 +40,10 @@ const TechnologiesPage = (props: ITechnologiesPageProps) => {
                   sx={{
                     display: "grid",
                     gridTemplateColumns: "3fr 1fr",
-                    mt: "20px",
                   }}
                 >
                   {el.technologies.map((el, index) => (
-                    <Typography key={index} gutterBottom>
+                    <Typography key={index} fontSize={14} gutterBottom>
                       {el}
                     </Typography>
                   ))}
