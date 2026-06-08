@@ -9,7 +9,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
 
   return (
     <Box sx={{ ...(!isMobile && { m: "0 200px" }) }}>
-      <Typography variant="h5" fontWeight={"bold"}>
+      <Typography fontSize={18} fontWeight={"bold"}>
         PROFESSIONAL SUMMARY
       </Typography>
       <Typography mt={1}>
@@ -21,10 +21,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         solutions.
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+      <Typography fontSize={18} fontWeight={"bold"} mt={5}>
         PROFESSIONAL EXPERIENCE
       </Typography>
-      <Typography mt={1} fontSize={18}>
+      <Typography mt={1} fontSize={16}>
         <span style={{ fontWeight: "bold" }}>Full-Stack Developer</span> |
         Cellock Ltd (Nicosia, Cyprus)
       </Typography>
@@ -54,10 +54,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         </li>
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+      <Typography fontSize={18} fontWeight={"bold"} mt={5}>
         CORE PROJECTS
       </Typography>
-      <Typography mt={1} fontSize={18}>
+      <Typography mt={1} fontSize={16}>
         <span style={{ fontWeight: "bold" }}>Quizzify</span> | Mobile
         Application
       </Typography>
@@ -83,10 +83,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         </li>
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+      <Typography fontSize={18} fontWeight={"bold"} mt={5}>
         EDUCATION & ACADEMIC RESEARCH
       </Typography>
-      <Typography mt={1} fontSize={18}>
+      <Typography mt={1} fontSize={16}>
         <span style={{ fontWeight: "bold" }}>
           Integrated Master in Computer Engineering & Informatics
         </span>{" "}
@@ -109,10 +109,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         </li>
       </Typography>
 
-      <Typography variant="h5" fontWeight={"bold"} mt={5}>
+      <Typography fontSize={18} fontWeight={"bold"} mt={5}>
         CERTIFICATIONS
       </Typography>
-      <Typography mt={1} fontSize={18}>
+      <Typography mt={1} fontSize={16}>
         <span style={{ fontWeight: "bold" }}>Deep Learning Specialization</span>{" "}
         | DeepLearning.AI
       </Typography>
