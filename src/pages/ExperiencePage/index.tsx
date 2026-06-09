@@ -30,8 +30,8 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1} component="ul">
         <li>
-          Develop and maintain production-grade web applications and backend
-          services using React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
+          Develop and maintain web applications and backend services using
+          React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
         </li>
         <li>
           Design and implement secure, high-performance REST APIs with
@@ -39,9 +39,9 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           systems.
         </li>
         <li>
-          Contributed to the modernization and scaling of a core accounting
-          microservice, improving maintainability, performance, and
-          extensibility within a broader microservices architecture.
+          Improved and extended an accounting microservice handling financial
+          transactions, invoicing, and reporting, enhancing performance and
+          maintainability.
         </li>
         <li>
           Collaborate daily within cross-functional teams in an Agile/Scrum
@@ -55,7 +55,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
 
       <Typography fontSize={18} fontWeight={"bold"} mt={5}>
-        CORE PROJECTS
+        PROJECTS
       </Typography>
       <Typography mt={1} fontSize={16}>
         <span style={{ fontWeight: "bold" }}>Quizzify</span> | Mobile
@@ -119,8 +119,9 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       <Typography mt={1} component="ul">
         <li>
           Completed a five-course specialization covering neural networks, deep
-          learning, machine learning, convolutional neural networks (CNNs),
-          sequence models, and AI best practices.
+          learning, convolutional neural networks, sequence models, and
+          practical machine learning techniques such as optimization,
+          regularization, and hyperparameter tuning.
         </li>
       </Typography>
 
