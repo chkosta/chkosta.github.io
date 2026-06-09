@@ -77,7 +77,7 @@ export default function Header() {
               {selectedItem}
             </Typography>
 
-            <Link to="/">
+            {/* <Link to="/">
               <Avatar
                 alt="Profile"
                 src="images/profile.jpg"
@@ -86,7 +86,7 @@ export default function Header() {
                   height: 30,
                 }}
               />
-            </Link>
+            </Link> */}
           </Box>
         </Toolbar>
       </AppBar>
