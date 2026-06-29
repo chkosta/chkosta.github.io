@@ -78,8 +78,8 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           and persistent user data.
         </li>
         <li>
-          Implemented JWT-based authentication, user management, and secure
-          session handling to enable reliable access and data protection.
+          Built an admin portal for user management, system analytics, and
+          platform oversight, improving operational monitoring and control.
         </li>
       </Typography>
 
