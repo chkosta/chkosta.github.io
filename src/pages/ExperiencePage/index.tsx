@@ -34,6 +34,10 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
         </li>
         <li>
+          Delivered end-to-end features, from requirement analysis to
+          implementation, testing, and deployment.
+        </li>
+        <li>
           Design and implement secure, high-performance REST APIs with
           third-party integrations and robust authentication/authorization
           systems.
