@@ -34,7 +34,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
         </li>
         <li>
-          Delivered end-to-end features, from requirement analysis to
+          Delivered end-to-end features, from requirements analysis to
           implementation, testing, and deployment.
         </li>
         <li>
