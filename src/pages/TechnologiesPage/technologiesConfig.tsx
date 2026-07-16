@@ -1,6 +1,21 @@
 export const technologiesConfig = {
   technologies: [
     {
+      group: "Backend & APIs",
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "RESTful APIs",
+        "Microservices Architecture",
+        "Socket.IO",
+        "JWT",
+      ],
+    },
+    {
+      group: "Databases",
+      technologies: ["PostgreSQL", "Microsoft SQL Server", "MySQL"],
+    },
+    {
       group: "Languages",
       technologies: [
         "Typescript",
@@ -11,6 +26,18 @@ export const technologiesConfig = {
         " C++",
         "C",
         "SQL",
+      ],
+    },
+    {
+      group: "DevOps & Tools",
+      technologies: [
+        "Docker",
+        "Docker Compose",
+        "Postman",
+        "Swagger",
+        "CI/CD Principles",
+        "Git",
+        "Jira",
       ],
     },
     {
@@ -25,34 +52,8 @@ export const technologiesConfig = {
       ],
     },
     {
-      group: "Backend & APIs",
-      technologies: [
-        "Node.js",
-        "Express.js",
-        "RESTful APIs",
-        "Microservices",
-        "Socket.IO",
-        "JWT Auth",
-      ],
-    },
-    {
-      group: "Databases",
-      technologies: ["PostgreSQL", "SQL Server", "MySQL"],
-    },
-    {
-      group: "DevOps & Tools",
-      technologies: [
-        "Docker",
-        "Docker Compose",
-        "Git",
-        "Postman",
-        "Swagger",
-        "Jira",
-      ],
-    },
-    {
       group: "Methologies",
-      technologies: ["Agile", "Scrum", "CI/CD Principles", "Code Reviews"],
+      technologies: ["Agile", "Scrum", "Code Reviews"],
     },
   ],
 };

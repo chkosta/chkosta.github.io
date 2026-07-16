@@ -13,12 +13,12 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         PROFESSIONAL SUMMARY
       </Typography>
       <Typography mt={1}>
-        Full-Stack Developer with expertise in designing, developing, and
-        deploying scalable web applications and robust backend services.
-        Proficient in TypeScript, React.js, Next.js, Node.js, and relational
-        databases. Proven track record of optimizing application performance,
-        building secure APIs, and delivering reliable, production-grade business
-        solutions.
+        Software Engineer with 3+ years of experience designing, building, and
+        maintaining scalable backend services and REST APIs using Node.js,
+        TypeScript, Express.js, and PostgreSQL. Experienced in microservices
+        architecture, third-party integrations, authentication systems, Docker,
+        and production deployments. Passionate about writing clean, maintainable
+        code and building reliable systems that scale.
       </Typography>
 
       <Typography fontSize={18} fontWeight={"bold"} mt={5}>
@@ -30,22 +30,16 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1} component="ul">
         <li>
-          Develop and maintain web applications and backend services using
-          React.js, Next.js, TypeScript, Node.js, and PostgreSQL.
+          Designed, developed, and maintained scalable RESTful APIs and backend
+          services using Node.js, Express.js and PostgreSQL
         </li>
         <li>
-          Delivered end-to-end features, from requirements analysis to
-          implementation, testing, and deployment.
+          Integrated secure third-party API integrations, implementing robust
+          authentication and authorization mechanisms.
         </li>
         <li>
-          Design and implement secure, high-performance REST APIs with
-          third-party integrations and robust authentication/authorization
-          systems.
-        </li>
-        <li>
-          Improved and extended an accounting microservice handling financial
-          transactions, invoicing, and reporting, enhancing performance and
-          maintainability.
+          Enhanced an accounting microservice by designing and implementing new
+          business functionality for financial transactions.
         </li>
         <li>
           Collaborate daily within cross-functional teams in an Agile/Scrum
@@ -72,9 +66,8 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           ranking systems, and player progression tracking.
         </li>
         <li>
-          Developed the frontend using React Native, Expo, and TypeScript,
-          delivering a responsive and engaging experience across Android
-          devices.
+          Built an administration portal for user management, system analytics,
+          and platform oversight, improving operational monitoring and control.
         </li>
         <li>
           Architected backend services with Node.js, Express.js, Socket.IO, and
@@ -82,8 +75,9 @@ const ExperiencePage = (props: IExperiencePageProps) => {
           and persistent user data.
         </li>
         <li>
-          Built an admin portal for user management, system analytics, and
-          platform oversight, improving operational monitoring and control.
+          Developed the frontend using React Native, Expo, and TypeScript,
+          delivering a responsive and engaging experience across Android
+          devices.
         </li>
       </Typography>
 

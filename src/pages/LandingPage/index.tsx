@@ -53,7 +53,7 @@ const LandingPage = () => {
             },
           }}
         >
-          Full-Stack Developer
+          Software Engineer
         </Typography>
 
         <Typography
