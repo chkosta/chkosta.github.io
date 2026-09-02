@@ -3,9 +3,8 @@ import { styled, useTheme } from "@mui/material/styles";
 import CustomDrawer from "./components/CustomDrawer";
 import MuiAppBar, { AppBarProps as MuiAppBarProps } from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
-import { Box, Typography, IconButton, Avatar } from "@mui/material";
+import { Box, Typography, IconButton } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 
 const AppBar = styled(MuiAppBar, {
@@ -76,17 +75,6 @@ export default function Header() {
             <Typography noWrap fontSize={18}>
               {selectedItem}
             </Typography>
-
-            {/* <Link to="/">
-              <Avatar
-                alt="Profile"
-                src="images/profile.jpg"
-                sx={{
-                  width: 30,
-                  height: 30,
-                }}
-              />
-            </Link> */}
           </Box>
         </Toolbar>
       </AppBar>
