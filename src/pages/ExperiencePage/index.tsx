@@ -13,12 +13,7 @@ const ExperiencePage = (props: IExperiencePageProps) => {
         PROFESSIONAL SUMMARY
       </Typography>
       <Typography mt={1}>
-        Software Engineer with 3+ years of experience designing, building, and
-        maintaining scalable backend services and REST APIs using Node.js,
-        TypeScript, Express.js, and PostgreSQL. Experienced in microservices
-        architecture, third-party integrations, authentication systems, Docker,
-        and production deployments. Passionate about writing clean, maintainable
-        code and building reliable systems that scale.
+        Experienced Full-Stack Developer specializing in the design, development, and deployment of scalable web applications and backend services. Strong expertise in React.js, Next.js, Node.js, TypeScript, PostgreSQL, RESTful APIs, and Microservices Architecture. Passionate about writing modular, maintainable, and reusable code across both the frontend and backend.
       </Typography>
 
       <Typography fontSize={18} fontWeight={"bold"} mt={5}>
@@ -30,25 +25,22 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1} component="ul">
         <li>
-          Designed, developed, and maintained scalable RESTful APIs and backend
-          services using Node.js, Express.js and PostgreSQL
+          Designed, developed and maintained web applications and backend services using TypeScript, React.js, Next.js, Node.js, and PostgreSQL.
         </li>
         <li>
-          Integrated secure third-party API integrations, implementing robust
-          authentication and authorization mechanisms.
+          Built reusable frontend components and responsive user interfaces following modern component-based development practices and clean architecture principles.
         </li>
         <li>
-          Enhanced an accounting microservice by designing and implementing new
-          business functionality for financial transactions.
+          Designed and developed secure RESTful APIs, implementing authentication, authorization, and third-party integrations.
         </li>
         <li>
-          Collaborate daily within cross-functional teams in an Agile/Scrum
-          structure, converting complex business requirements into clean,
-          self-documenting, and maintainable code.
+          Developed and enhanced business functionality within a microservices architecture, delivering scalable and maintainable solutions.
         </li>
         <li>
-          Participate in code reviews and enforce best practices to improve code
-          quality and team productivity.
+          Containerized applications using Docker and contributed to CI/CD deployment pipelines to improve release reliability and developer productivity.
+        </li>
+        <li>
+          Participated in code reviews and enforced best practices to improve code quality and team productivity.
         </li>
       </Typography>
 
@@ -61,23 +53,16 @@ const ExperiencePage = (props: IExperiencePageProps) => {
       </Typography>
       <Typography mt={1} component="ul">
         <li>
-          Built and launched an Android mobile application featuring real-time
-          multiplayer games, custom game creation, competitive leaderboards,
-          ranking systems, and player progression tracking.
+          Built and launched an Android mobile application featuring real-time multiplayer games, custom game creation, competitive leaderboards, ranking systems, and player progression tracking.
         </li>
         <li>
-          Built an administration portal for user management, system analytics,
-          and platform oversight, improving operational monitoring and control.
+          Built an administration portal for user management, system analytics, and platform oversight, improving operational monitoring and control.
         </li>
         <li>
-          Architected backend services with Node.js, Express.js, Socket.IO, and
-          PostgreSQL to support low-latency gameplay, real-time communication,
-          and persistent user data.
+          Developed the frontend using React Native, Expo, and TypeScript, delivering a responsive and engaging experience across Android devices.
         </li>
         <li>
-          Developed the frontend using React Native, Expo, and TypeScript,
-          delivering a responsive and engaging experience across Android
-          devices.
+          Architected backend services with Node.js, Express.js, Socket.IO, and PostgreSQL to support low-latency gameplay, real-time communication, and persistent user data.
         </li>
       </Typography>
 
